@@ -1,11 +1,11 @@
-module github.com/gruntwork-io/helm-kubernetes-services/test
+module github.com/terraform-modules-krish/helm-kubernetes-services/test
 
 go 1.18
 
 require (
 	github.com/GoogleCloudPlatform/gke-managed-certs v1.0.5
 	github.com/ghodss/yaml v1.0.0
-	github.com/gruntwork-io/terratest v0.41.9
+	github.com/terraform-modules-krish/terratest v0.41.9
 	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.51.2
 	github.com/stretchr/testify v1.8.1
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4
@@ -44,7 +44,7 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.2.0 // indirect
 	github.com/googleapis/gax-go/v2 v2.7.0 // indirect
-	github.com/gruntwork-io/go-commons v0.8.0 // indirect
+	github.com/terraform-modules-krish/go-commons v0.8.0 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-getter v1.7.0 // indirect

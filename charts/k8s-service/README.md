@@ -18,12 +18,12 @@ If you're using the chart to deploy to [GKE](https://cloud.google.com/kubernetes
 
 ## How to use this chart?
 
-* See the [root README](/README.adoc) for general instructions on using Gruntwork Helm Charts.
-* See the [examples](/examples) folder for example usage.
+* See the [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc) for general instructions on using Gruntwork Helm Charts.
+* See the [examples](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/examples) folder for example usage.
 * See the provided [values.yaml](./values.yaml) file for the required and optional configuration values that you can set
   on this chart.
 
-back to [root README](/README.adoc#core-concepts)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#core-concepts)
 
 ## What resources does this Helm Chart deploy?
 
@@ -49,7 +49,7 @@ The following resources will be deployed with this Helm Chart, depending on whic
 - `ManagedCertificate`: The `ManagedCertificate` is a [GCP](https://cloud.google.com/) -specific resource that creates a Google Managed SSL certificate. Google-managed SSL certificates are provisioned, renewed, and managed for your domain names. Read more about Google-managed SSL certificates [here](https://cloud.google.com/load-balancing/docs/ssl-certificates#managed-certs). Created only if you configure the `google.managedCertificate` input (and set
                          `google.managedCertificate.enabled = true` and `google.managedCertificate.domainName = your.domain.name`).
 
-back to [root README](/README.adoc#core-concepts)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#core-concepts)
 
 ## How do I deploy additional services not managed by the chart?
 
@@ -59,7 +59,7 @@ key. You provide each resource manifest directly as a value under `customResourc
 [test/fixtures/custom_resources_values.yaml](../../test/fixtures/custom_resources_values.yaml) and
 [test/fixtures/multiple_custom_resources_values.yaml](../../test/fixtures/multiple_custom_resources_values.yaml).
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ## How do I expose my application internally to the cluster?
 
@@ -177,7 +177,7 @@ Note that DNS does not resolve ports, so in this case, you will have to know whi
 `edge-service-nginx.default.svc.cluster.local:80`. However, like the `Service` name, this should be predictable since it
 is specified in the Helm Chart input value.
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ## How do I expose my application externally, outside of the cluster?
 
@@ -503,7 +503,7 @@ ingress:
 The `/*` rule which routes to port 3000 will always be used even when accessing the path `/app` because it will be
 evaluated first when routing requests.
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ### How do I expose additional ports?
 
@@ -557,7 +557,7 @@ service:
 This will override the default settings such that only the `Deployment` resource is created, with no ports exposed on
 the container.
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ## How do I check the status of the rollout?
 
@@ -676,7 +676,7 @@ Events:
 This will output detailed information about the `Pod`, including an event log. In this case, the roll out failed because
 there is not enough capacity in the cluster to schedule the `Pod`.
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ## How do I set and share configurations with the application?
 
@@ -992,7 +992,7 @@ approach:
 
 - Storing sensitive configuration values
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ## How do you update the application to a new version?
 
@@ -1059,7 +1059,7 @@ canary:
 ```
 Once deployed, your service will route traffic across both your stable and canary deployments, allowing you to monitor for and catch any issues early.
 
-back to [root README](/README.adoc#major-changes)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#major-changes)
 
 ## How do I verify my canary deployment?
 
@@ -1076,7 +1076,7 @@ edge-service-nginx-canary-844c978df7-bsr8     0/1       Pending   0          52s
 
 Therefore, in this example, you could monitor your canary by running `kubectl logs -f edge-service-nginx-canary-844c978df7-bsr8`
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ## How do I roll back a canary deployment?
 
@@ -1087,7 +1087,7 @@ $ helm upgrade -f values.yaml edge-service gruntwork/k8s-service
 ```
 Following this update, Kubernetes will determine that your canary deployment is no longer desired and will delete it.
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ## How do I ensure a minimum number of Pods are available across node maintenance?
 
@@ -1103,7 +1103,7 @@ and in [the official
 documentation](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/#how-disruption-budgets-work).
 
 
-back to [root README](/README.adoc#major-changes)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#major-changes)
 
 ## Why does the Pod have a preStop hook with a Shutdown Delay?
 
@@ -1125,7 +1125,7 @@ You can read more about this topic in [our blog post
 Propagation"](https://blog.gruntwork.io/delaying-shutdown-to-wait-for-pod-deletion-propagation-445f779a8304).
 
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
 
 ## What is a sidecar container?
 
@@ -1181,7 +1181,7 @@ container configured by the `containerImage`, `ports`, `livenessProbe`, etc inpu
 `sideCarContainers` variable directly renders the spec, meaning that the additional values for the side cars such as
 `livenessProbe` should be rendered directly within the `sideCarContainers` input value.
 
-back to [root README](/README.adoc#core-concepts)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#core-concepts)
 
 ## How do I use a private registry?
 
@@ -1217,4 +1217,4 @@ imagePullSecrets:
 You can learn more about using private registries with Kubernetes in [the official
 documentation](https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry).
 
-back to [root README](/README.adoc#day-to-day-operations)
+back to [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.2.24/README.adoc#day-to-day-operations)
