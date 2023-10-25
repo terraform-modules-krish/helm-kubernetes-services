@@ -18,8 +18,8 @@ If you're using the chart to deploy to [GKE](https://cloud.google.com/kubernetes
 
 ## How to use this chart?
 
-* See the [root README](/README.adoc) for general instructions on using Gruntwork Helm Charts.
-* See the [examples](/examples) folder for example usage.
+* See the [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.1.3/README.adoc) for general instructions on using Gruntwork Helm Charts.
+* See the [examples](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.1.3/examples) folder for example usage.
 * See the provided [values.yaml](./values.yaml) file for the required and optional configuration values that you can set
   on this chart.
 
