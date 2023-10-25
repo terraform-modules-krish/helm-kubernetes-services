@@ -69,7 +69,7 @@ In order to install Helm Charts, we need to have a working version of Tiller (th
 `minikube` cluster. In this guide, we will use a barebones helm install with the defaults to get up and running quickly.
 
 **WARNING: the barebones Tiller has no security context. Be sure to enable a stronger security context in any production
-Kubernetes cluster. Read [our guide on Helm](https://github.com/gruntwork-io/kubergrunt/blob/master/HELM_GUIDE.md) for
+Kubernetes cluster. Read [our guide on Helm](https://github.com/terraform-modules-krish/kubergrunt/blob/master/HELM_GUIDE.md) for
 more information.**
 
 To setup helm, first install the [`helm` client](https://docs.helm.sh/using_helm/#installing-helm). Make sure the binary
@@ -287,7 +287,7 @@ Each key at the root of the `configMaps` map value specifies a `ConfigMap` by na
 specifies how that `ConfigMap` should be included in the application container. You can either include it as a file
 (`as: volume`) or environment variable (`as: environmet`). Here we include it as an environment variable, setting the
 variable `SERVER_TEXT` to the value of the `server_text` key of the `ConfigMap`. You can refer to the documentation in
-the chart's [`values.yaml`](/charts/k8s-service/values.yaml) for details on how to set the input map.
+the chart's [`values.yaml`](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.0.11/charts/k8s-service/values.yaml) for details on how to set the input map.
 
 To deploy this, we will pass it in in addition to the root `values.yaml` file to merge the two inputs together. We will
 use `helm upgrade` here instead of `helm install` so that we can update our previous deployment:
@@ -398,4 +398,4 @@ Congratulations! At this point, you have:
 - Configured the application using `ConfigMaps`.
 - Configured the application using `Secrets`.
 
-To learn more about the `k8s-service` Helm Chart, refer to [the chart documentation](/charts/k8s-service).
+To learn more about the `k8s-service` Helm Chart, refer to [the chart documentation](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.0.11/charts/k8s-service).
