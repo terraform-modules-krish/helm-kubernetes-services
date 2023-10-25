@@ -179,7 +179,7 @@ process.
 
 You can further dig deeper using `describe`, or querying the different subresources such as the underlying Pods. For
 this guide, we are satisfied with the `Deployment` status output above. See the [How do I check the status of the
-rollout?](/charts/k8s-service/README.md#how-do-i-check-the-status-of-the-rollout) section of the chart README for
+rollout?](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.1.5/charts/k8s-service/README.md#how-do-i-check-the-status-of-the-rollout) section of the chart README for
 more details on how to check in on the detailed status of a rollout, and to help troubleshoot any issues in your
 environment.
 
@@ -312,7 +312,7 @@ status. The `READY` status is managed using `readinessProbes`: as long as the `P
 `Pod` will be marked `READY` and kept in the pool for the `Service`.
 
 There are several different types of `Services`. You can learn more about the different types in the [How do I expose my
-application](/charts/k8s-service/README.md#how-do-i-expose-my-application-internally-to-the-cluster) section of the
+application](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.1.5/charts/k8s-service/README.md#how-do-i-expose-my-application-internally-to-the-cluster) section of the
 chart README. For this example, we used the default `Service` resource created by the chart, but overrode the type to be
 `NodePort`. A `NodePort` `Service` exposes a port on the Kubernetes worker that routes to the `Service` endpoint. This
 endpoint will load balance across the `Pods` that match the selector for the `Service`.
@@ -378,4 +378,4 @@ Congratulations! At this point, you have:
 - Deployed nginx on to `minikube` using the `k8s-service` Helm Chart.
 - Verified the deployment by querying for resources using `kubectl` and opening port forwards to access the endpoints.
 
-To learn more about the `k8s-service` Helm Chart, refer to [the chart documentation](/charts/k8s-service).
+To learn more about the `k8s-service` Helm Chart, refer to [the chart documentation](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.1.5/charts/k8s-service).
