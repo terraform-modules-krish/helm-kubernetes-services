@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/ghodss/yaml"
-	"github.com/gruntwork-io/terratest/modules/helm"
+	"github.com/terraform-modules-krish/terratest/modules/helm"
 	prometheus_operator_v1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
