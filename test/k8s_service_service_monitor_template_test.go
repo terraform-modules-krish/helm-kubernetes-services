@@ -11,7 +11,7 @@ import (
 
 	promethues_operator_v1 "github.com/coreos/prometheus-operator/pkg/apis/monitoring/v1"
 	"github.com/ghodss/yaml"
-	"github.com/gruntwork-io/terratest/modules/helm"
+	"github.com/terraform-modules-krish/terratest/modules/helm"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
