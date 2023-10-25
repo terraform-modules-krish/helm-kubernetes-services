@@ -17,7 +17,7 @@ There are three tiers of tests for helm:
   production system, they should be passive and not destructive.
 
 This folder contains the "template tests" and "integration tests". Both types of tests use a helper library called
-[Terratest](https://github.com/gruntwork-io/terratest). While "template tests" do not need any infrastructure, the
+[Terratest](https://github.com/terraform-modules-krish/terratest). While "template tests" do not need any infrastructure, the
 "integration tests" deploy the charts to a Kubernetes cluster.
 
 
