@@ -16,8 +16,8 @@ rules in front of the `Service`.
 
 ## How to use this chart?
 
-* See the [root README](/README.md) for general instructions on using Gruntwork Helm Charts.
-* See the [examples](/examples) folder for example usage.
+* See the [root README](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.0.4/README.md) for general instructions on using Gruntwork Helm Charts.
+* See the [examples](https://github.com/terraform-modules-krish/helm-kubernetes-services/blob/v0.0.4/examples) folder for example usage.
 * See the provided [values.yaml](./values.yaml) file for the required and optional configuration values that you can set
   on this chart.
 
